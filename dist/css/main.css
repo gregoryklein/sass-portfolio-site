@@ -2,12 +2,23 @@
   box-sizing: border-box; }
 
 body {
-  background: #444;
   color: #000;
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
+  body#bg-img {
+    background: url(https://www.dropbox.com/s/ajnk255rbg76wfn/pwp-home-image.jpg?raw=1);
+    background-attachment: fixed;
+    background-size: cover; }
+    body#bg-img .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.5);
+      z-index: -1; }
 
 h1, h2, h3 {
   margin: 0;
