@@ -1,6 +1,4 @@
-* {
-     box-sizing: border-box;
-}
+@import 'menu';
 
 $primary-color: #444;
 $secondary-color: purple;
@@ -8,6 +6,10 @@ $overlay-color:  #fff;
 $show-home-image: true;
 $home-image: url(https://www.dropbox.com/s/ajnk255rbg76wfn/pwp-home-image.jpg?raw=1);
 $background-opacity: 0.3;
+
+* {
+     box-sizing: border-box;
+}
 
 @mixin easeOut {
      transition: all 0.32s ease-out;
