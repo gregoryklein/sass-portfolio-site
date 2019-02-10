@@ -15,8 +15,6 @@ h1, h2, h3 {
   h1.lg-heading, h2.lg-heading, h3.lg-heading {
     font-size: 2rem; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
-    margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
     background: rbga(#494949); }
 
 a {
@@ -29,7 +27,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #4e0189; }
+  color: pink; }
 
 main {
   padding: 1rem;
@@ -40,3 +38,10 @@ main {
     justify-content: flex-start; }
     main .icons i {
       padding: 0rem 0.8rem 0rem 0.8rem; }
+      main .icons i:hover {
+        color: pink;
+        transition: all 0.32s ease-out; }
+  main#home {
+    overflow: hidden; }
+    main#home h1 {
+      margin-top: 20vh; }
