@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/gregoryklein/sass-portfolio-site#readme",
   "dependencies": {
-    "node-sass": "^4.11.0"
+    "hamburgers": "^1.1.3",
+    "node-sass": "^4.11.0",
+    "sass-burger": "^1.3.1"
   }
 }

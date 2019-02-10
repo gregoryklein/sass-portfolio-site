@@ -49,11 +49,30 @@ main {
     display: flex;
     justify-content: flex-start; }
     main .icons i {
-      padding: 0rem 0.8rem 0rem 0.8rem; }
+      padding: 1.2rem 0.8rem 0rem 0.8rem; }
       main .icons i:hover {
         color: purple;
         transition: all 0.32s ease-out; }
   main#home {
     overflow: hidden; }
     main#home h1 {
-      margin-top: 20vh; }
+      margin-top: 8vh; }
+
+/*
+//burger sass (https://github.com/jorenvanhee/sass-burger)
+@import "burger";
+
+.menu-button {
+	display: inline-block;
+     padding: 1em;
+     float: right;
+}
+
+.burger-icon {
+	@include burger(25px, 3px, 5px, #444);
+}
+
+.menu-button.is-active .burger-icon {
+	@include burger-to-cross;
+}
+*/
