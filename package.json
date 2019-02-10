@@ -1,0 +1,25 @@
+{
+  "name": "sass-portfolio-site",
+  "version": "1.0.0",
+  "description": "new portfolio site using node-sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gregoryklein/sass-portfolio-site.git"
+  },
+  "keywords": [
+    "pwp"
+  ],
+  "author": "greg klein",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gregoryklein/sass-portfolio-site/issues"
+  },
+  "homepage": "https://github.com/gregoryklein/sass-portfolio-site#readme",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
