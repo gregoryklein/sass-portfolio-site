@@ -7,11 +7,16 @@
 * {
   box-sizing: border-box; }
 
+html {
+  height: 100%; }
+
 body {
   color: #000;
-  height: 100%;
+  min-height: 100%;
   margin: 0;
-  line-height: 1.5; }
+  line-height: 1.5;
+  display: grid;
+  grid-template-rows: 1fr auto; }
   body#bg-img {
     background: url(https://www.dropbox.com/s/ajnk255rbg76wfn/pwp-home-image.jpg?raw=1);
     background-attachment: fixed;
@@ -25,6 +30,18 @@ body {
       right: 0;
       background: rgba(255, 255, 255, 0.3);
       z-index: -1; }
+
+.email-button {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  text-transform: lowercase;
+  background: #2f09da;
+  padding: 20px;
+  display: inline-block;
+  border: none; }
+  .email-button hover {
+    background: #6034fc; }
 
 h1, h2, h3 {
   margin: 0; }
@@ -69,22 +86,3 @@ main {
     overflow: hidden; }
     main#home h1 {
       margin-top: 8vh; }
-
-/*
-//burger sass (https://github.com/jorenvanhee/sass-burger)
-@import "burger";
-
-.menu-button {
-	display: inline-block;
-     padding: 1em;
-     float: right;
-}
-
-.burger-icon {
-	@include burger(25px, 3px, 5px, #444);
-}
-
-.menu-button.is-active .burger-icon {
-	@include burger-to-cross;
-}
-*/

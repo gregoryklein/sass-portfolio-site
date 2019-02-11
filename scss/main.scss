@@ -46,18 +46,38 @@ $background-opacity: 0.3;
 }
 
 
+html {
+     height: 100%;
 
+}
 body {
      @include background;
      //background: $primary-color;
      color: #000;
-     height: 100%;
+     min-height: 100%;
      margin: 0;
      //font-family: 'Nunito', Tahoma, Geneva, Verdana, sans-serif;
      line-height: 1.5;
+     display: grid;
+     grid-template-rows: 1fr auto;
 }
 
+//contact me button
+.email-button {
+     font-family: 'Raleway', sans-serif;
+     font-weight: 700;
+     color: #fff;
+     text-transform: lowercase;
+     background: #2f09da;
+     padding: 20px;
+     display: inline-block;
+     border: none;
 
+     hover {
+          background: #6034fc;
+          //transition: all 0.4s ease 0s;
+     }
+     }
 
 //headings
 
@@ -123,22 +143,3 @@ main {
           } 
      }
 }
-
-/*
-//burger sass (https://github.com/jorenvanhee/sass-burger)
-@import "burger";
-
-.menu-button {
-	display: inline-block;
-     padding: 1em;
-     float: right;
-}
-
-.burger-icon {
-	@include burger(25px, 3px, 5px, #444);
-}
-
-.menu-button.is-active .burger-icon {
-	@include burger-to-cross;
-}
-*/
