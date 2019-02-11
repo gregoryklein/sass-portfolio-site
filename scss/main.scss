@@ -1,4 +1,9 @@
 @import 'menu';
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+
+
 
 $primary-color: #444;
 $secondary-color: purple;
@@ -48,7 +53,7 @@ body {
      color: #000;
      height: 100%;
      margin: 0;
-     font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     //font-family: 'Nunito', Tahoma, Geneva, Verdana, sans-serif;
      line-height: 1.5;
 }
 
@@ -57,15 +62,22 @@ body {
 
 h1, h2, h3 {
      margin: 0;
-     font-weight: 700;
 
      &.lg-heading {
-          font-size: 2rem;
+          font-size: 2.8rem;
+          font-weight: 600;
+          font-family: 'Merriweather', serif;
+          display: flex;
+          justify-content: center;
      }
 
      &.sm-heading {
           //margin-bottom: 2rem;
          //padding: 0.2rem 1rem;
+         padding-top: 1rem;
+         font-size: 1.5rem;
+         font-family: 'Cabin', sans-serif;
+         font-weight: 400;
           background: rbga(lighten($primary-color, 2));
      }
 }
@@ -95,7 +107,7 @@ main {
           display: flex;
           justify-content: flex-start;
           i {
-               padding: 1.2rem 0.8rem 0rem 0.8rem;
+               padding: 2rem 0.8rem 0rem 0.8rem;
                &:hover {
                     color: $secondary-color;
                     @include easeOut();

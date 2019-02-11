@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Merriweather");
+@import url("https://fonts.googleapis.com/css?family=Cabin");
+.menu-btn {
+  position: absolute; }
+
 * {
   box-sizing: border-box; }
 
@@ -5,7 +11,6 @@ body {
   color: #000;
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
     background: url(https://www.dropbox.com/s/ajnk255rbg76wfn/pwp-home-image.jpg?raw=1);
@@ -22,11 +27,18 @@ body {
       z-index: -1; }
 
 h1, h2, h3 {
-  margin: 0;
-  font-weight: 700; }
+  margin: 0; }
   h1.lg-heading, h2.lg-heading, h3.lg-heading {
-    font-size: 2rem; }
+    font-size: 2.8rem;
+    font-weight: 600;
+    font-family: 'Merriweather', serif;
+    display: flex;
+    justify-content: center; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
     background: rbga(#494949); }
 
 a {
@@ -49,7 +61,7 @@ main {
     display: flex;
     justify-content: flex-start; }
     main .icons i {
-      padding: 1.2rem 0.8rem 0rem 0.8rem; }
+      padding: 2rem 0.8rem 0rem 0.8rem; }
       main .icons i:hover {
         color: purple;
         transition: all 0.32s ease-out; }
