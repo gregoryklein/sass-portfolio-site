@@ -124,7 +124,7 @@ main {
      height: 100%;
      width: 100%;
 
-     .icons {
+     .socials {
           display: flex;
           justify-content: flex-start;
           i {
@@ -141,5 +141,13 @@ main {
           h1 {
                margin-top: 8vh;
           } 
+     }
+}
+
+.nav-icons {
+     display: flex;
+     justify-content: flex-start;
+     i {
+          padding: 2rem 0.8rem;
      }
 }
