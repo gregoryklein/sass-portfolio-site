@@ -22,14 +22,45 @@ body {
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      right: 0;
-      background: rgba(255, 255, 255, 0.3);
+      background: linear-gradient(181deg, rgba(255, 0, 0, 0), red);
+      background-size: 400% 400%;
+      -webkit-animation: AnimationName 25s ease infinite;
+      -moz-animation: AnimationName 25s ease infinite;
+      animation: AnimationName 25s ease infinite;
+      /*
+                         content:'';
+                         position: absolute;
+                         width: 100%;
+                         height: 100%;
+                         top: 0;
+                         right: 0;
+                         background: rgba($overlay-color, $background-opacity);
+                         */
       z-index: -1; }
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 50% 0%; }
+  50% {
+    background-position: 51% 100%; }
+  100% {
+    background-position: 50% 0%; } }
+
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 50% 0%; }
+  50% {
+    background-position: 51% 100%; }
+  100% {
+    background-position: 50% 0%; } }
+
+@keyframes AnimationName {
+  0% {
+    background-position: 50% 0%; }
+  50% {
+    background-position: 51% 100%; }
+  100% {
+    background-position: 50% 0%; } }
 
 .email-button {
   font-family: 'Raleway', sans-serif;
@@ -77,11 +108,11 @@ main {
   main .socials {
     display: flex;
     justify-content: flex-start; }
-    main .socials i {
+    main .socials a {
       padding: 2rem 0.8rem 0rem 0.8rem; }
-      main .socials i:hover {
+      main .socials a:hover {
         color: purple;
-        transition: all 0.32s ease-out; }
+        transition: all 0.4s ease-out; }
   main#home {
     overflow: hidden; }
     main#home h1 {
@@ -89,6 +120,6 @@ main {
 
 .nav-icons {
   display: flex;
-  justify-content: flex-start; }
+  justify-content: center; }
   .nav-icons i {
-    padding: 2rem 0.8rem; }
+    padding: 6rem; }

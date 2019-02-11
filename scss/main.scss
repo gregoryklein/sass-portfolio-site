@@ -10,7 +10,7 @@ $secondary-color: purple;
 $overlay-color:  #fff;
 $show-home-image: true;
 $home-image: url(https://www.dropbox.com/s/ajnk255rbg76wfn/pwp-home-image.jpg?raw=1);
-$background-opacity: 0.3;
+$background-opacity: 0.9;
 
 * {
      box-sizing: border-box;
@@ -18,7 +18,7 @@ $background-opacity: 0.3;
 
 
 @mixin easeOut {
-     transition: all 0.32s ease-out;
+     transition: all 0.4s ease-out;
 }
 
 @mixin background {
@@ -36,9 +36,9 @@ $background-opacity: 0.3;
                          top: 0;
                          right: 0;
                          background: rgba($overlay-color, $background-opacity);
-
                          z-index: -1;
                     }
+               }
           }
 
           
@@ -59,7 +59,6 @@ body {
      //font-family: 'Nunito', Tahoma, Geneva, Verdana, sans-serif;
      line-height: 1.5;
      display: grid;
-     grid-template-rows: 1fr auto;
 }
 
 //contact me button
@@ -127,7 +126,7 @@ main {
      .socials {
           display: flex;
           justify-content: flex-start;
-          i {
+          a {
                padding: 2rem 0.8rem 0rem 0.8rem;
                &:hover {
                     color: $secondary-color;
@@ -146,8 +145,8 @@ main {
 
 .nav-icons {
      display: flex;
-     justify-content: flex-start;
+     justify-content: center;
      i {
-          padding: 2rem 0.8rem;
+          padding: 6rem;
      }
 }
